@@ -1,8 +1,21 @@
 @use "partials/variables.scss" as *;
 @use "partials/mixins.scss" as *;
 
+html{
+    font-family: 'Poppins', 'Montserrat';
+}
+
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: #181818;
+}
+header{
+    .my-btn{
+        background-color: white;
+        border: 1px solid white;
+    }
+}
+.my-bg{
+    background-color: #282828;
 }
 
 .my-text-try{
