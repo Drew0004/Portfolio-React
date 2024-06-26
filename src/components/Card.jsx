@@ -1,5 +1,6 @@
 import React, { Children } from 'react'
 const Card = ({name, descrtiption, img}) => {
+  let ciao = 'ciao fra!'
   return (
 
     <div className="card" style={{width: '18rem'}}>
@@ -9,7 +10,7 @@ const Card = ({name, descrtiption, img}) => {
             textTransform: 'uppercase',
             }} className="card-title my-text-try">{name}</h5>
             <p className="card-text">{descrtiption}</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a onClick={()=> alert('bottone premuto')} href="#" className="btn btn-primary">Go somewhere</a>
         </div>
     </div>
 

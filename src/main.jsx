@@ -7,7 +7,7 @@ import './assets/scss/main.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MyHeader/>
-    <App />
+        <MyHeader/>
+        <App />
   </React.StrictMode>,
 )

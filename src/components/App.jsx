@@ -9,7 +9,8 @@ function App() {
         <h2 className='text-center my-2  my-text-try'>Hi</h2>
         <div className="row">
             {myCards.map((singleCard)=>{
-                return <Card key={singleCard.id} {...singleCard}/>
+                return <Card key={singleCard.id} 
+                {...singleCard}/>
             })}
         </div>
       </div>
