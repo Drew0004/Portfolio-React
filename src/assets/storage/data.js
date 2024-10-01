@@ -129,4 +129,4 @@ const artworks = [
     '/img/Artworks/Space Invaders.jpg',s
 ]
 
-export default { projects, artworks };
+export  { projects, artworks };

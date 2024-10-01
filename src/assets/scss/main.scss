@@ -2,49 +2,49 @@
 @use "partials/mixins.scss" as *;
 
 html{
-    font-family: 'Poppins', 'Montserrat';
+    font-family: 'Outfit', sans-serif;
 }
 
-body{
-    background-color: #181818;
-}
-.my-bg{
-    background-color: #282828;
-}
 header{
+    border: 1px solid black;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    .my-btn{
-        background-color: white;
-        border: 1px solid white;
-        transition: 0.2s ease-in-out;
-        &:hover{
-            background-color: transparent;
-            border: 1px solid white;
-            color: white;
-        }
-    }
 }
+.my-btn {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+    &:hover {
+        color: white;
+        fill: #ffff;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      top: 0;
+      left: -40px;
+      transform: skewX(180deg);
+      background-color: black;
+      z-index: -1;
+      transition: ease-in-out 0.5s;
+    }
+    &:hover::before {
+      width: 160%;
+    }
+  }
 
-#about-section{
-    p{
-        text-align: justify;
-    }
-    .hello-claim{
-        font-family: 'Druk wide bold';
-        font-size: 9rem;
-    }
-    .my-pic-container{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        overflow: hidden;
-        img{
-            object-fit: cover;
-            object-position: 30% 20%;
-        }
-    }
-}
+  
+  
