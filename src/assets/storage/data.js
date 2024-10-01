@@ -109,3 +109,24 @@ const projects = [
         repoLink: 'https://github.com/Drew0004/React-To-Do-List'
     },
 ]
+
+const artworks = [
+    '/img/Artworks/Astratto1920.jpg',
+    '/img/Artworks/Butterfly.jpg',
+    '/img/Artworks/Ciclope.jpg',
+    '/img/Artworks/DalìEdit2.jpg',
+    '/img/Artworks/Elephant.jpg',
+    '/img/Artworks/Esso.jpg',
+    '/img/Artworks/Fair Park.jpg',
+    '/img/Artworks/HappinessType.jpg',
+    '/img/Artworks/MushAlienBianco.jpg',
+    '/img/Artworks/MushroomMan1.jpg',
+    '/img/Artworks/PosterTyler.jpg',
+    '/img/Artworks/PostY2K1.jpg',
+    '/img/Artworks/RockCerchio.jpg',
+    '/img/Artworks/scifi.jpg',
+    '/img/Artworks/SirFlower.jpg',
+    '/img/Artworks/Space Invaders.jpg',s
+]
+
+export default { projects, artworks };
