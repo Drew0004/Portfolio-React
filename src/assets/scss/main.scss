@@ -30,13 +30,16 @@ header{
 }
 
 #about-section{
+    p{
+        text-align: justify;
+    }
     .hello-claim{
         font-family: 'Druk wide bold';
         font-size: 9rem;
     }
     .my-pic-container{
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         overflow: hidden;
         img{
