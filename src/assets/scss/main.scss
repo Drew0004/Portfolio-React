@@ -14,7 +14,7 @@ header{
     z-index: 1;
 }
 .my-btn {
-    color: black;
+    color: black !important; 
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid black;
@@ -26,7 +26,7 @@ header{
     transition: ease-in-out 0.5s;
     overflow: hidden;
     &:hover {
-        color: white;
+        color: white !important;
         fill: #ffff;
     }
     &::before {
