@@ -28,7 +28,7 @@ const OffCanva = () => {
                         </li>
                         <li className='dotted-border py-4'>
                             <button className="my-btn px-4 py-2 d-flex align-items-center">
-                                <a href='/img/Andrea_Aliquò_Resume_.pdf' download="Andrea_Aliquò_Resume_.pdf" className='fw-bold text-decoration-none me-4 text-reset'>Resume</a> <ArrowRightDown width={'20px'} height={'20px'}/>
+                                <a href='/img/Andrea_Aliquò_Resume.pdf' download="Andrea_Aliquò_Resume.pdf" className='fw-bold text-decoration-none me-4 text-reset'>Resume</a> <ArrowRightDown width={'20px'} height={'20px'}/>
                             </button>
                         </li>
                         <li className='dotted-border py-4'>

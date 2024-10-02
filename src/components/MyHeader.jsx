@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
 import OffCanva from './OffCanva'
 
-
 const MyHeader = () => {
   return (
     <>
@@ -21,7 +20,9 @@ const MyHeader = () => {
                     </li>
                     <li className='d-lg-block d-none'>
                         <button className="my-btn px-4 py-2 d-flex align-items-center">
-                            <a href='/img/Andrea_Aliquò_Resume_.pdf' download="Andrea_Aliquò_Resume_.pdf" className='fw-bold text-decoration-none me-4 text-reset'>Resume</a> <ArrowRightDown width={'20px'} height={'20px'}/>
+                            <a href='/img/Andrea_Aliquò_Resume.pdf' download="Andrea_Aliquò_Resume.pdf" className='fw-bold text-decoration-none me-4 text-reset'>
+                                <span className='fw-bold me-4'>Resume</span> <ArrowRightDown width={'20px'} height={'20px'}/>
+                            </a> 
                         </button>
                     </li>
                     <li className='d-lg-block d-none'>
