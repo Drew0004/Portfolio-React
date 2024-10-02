@@ -4,7 +4,19 @@
 html{
     font-family: 'Outfit', sans-serif;
 }
+// utilities
+.black-border{
+    border: 1px solid black;
+}
+.c-pointer{
+    cursor: pointer;
+}
 
+.dotted-border{
+    border-bottom: 1px dashed black;
+}
+
+//main style
 header{
     border: 1px solid black;
     position: sticky;
@@ -13,6 +25,7 @@ header{
     right: 0;
     z-index: 1;
 }
+
 .my-btn {
     color: black !important; 
     text-transform: uppercase;
