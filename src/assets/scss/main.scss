@@ -16,14 +16,21 @@ html{
     border-bottom: 1px dashed black;
 }
 
+.main-red{
+    color: #FF294D;
+}
+.main-red-bg{
+    background-color: #FF294D;
+}
+
 //main style
 header{
-    border: 1px solid black;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    background-color: white;
 }
 
 .my-btn {
