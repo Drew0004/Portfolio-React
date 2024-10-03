@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useRef } from 'react'
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
 import OffCanva from './OffCanva'
 
-const MyHeader = () => {
+const MyHeader = ({scrollToAbout}) => {
+
   return (
     <>
         <header className='py-4'>
@@ -13,7 +14,7 @@ const MyHeader = () => {
                 </div>
                 <ul className='col-7 list-unstyled m-0 d-flex justify-content-between align-items-center'>
                     <li className='d-lg-block d-none'>
-                        <a href="#nogo" className='text-uppercase text-underline fw-bold text-black'>About</a>
+                        <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold text-black'>About</a>
                     </li>
                     <li className='d-lg-block d-none'>
                         <a href="#nogo" className='text-uppercase text-underline fw-bold text-black'>Works</a>

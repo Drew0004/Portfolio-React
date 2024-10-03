@@ -1,14 +1,23 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import MyHeader from '../MyHeader'
 import ClaimSection from '../ClaimSection'
 import AboutSection from '../AboutSection'
 
 const Home = () => {
-  return (
-    <>
-        <ClaimSection/>
-        <AboutSection/>
-    </>
-  )
+    const abtRef = useRef(null)
+
+    const scrollToAbout = () => {
+      if (abtRef.current) {
+        abtRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+    return (
+        <>
+            <MyHeader scrollToAbout={scrollToAbout}/>
+            <ClaimSection/>
+            <AboutSection ref={abtRef}/>
+        </>
+    )
 }
 
 export default Home
