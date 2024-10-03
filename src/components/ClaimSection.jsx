@@ -1,5 +1,5 @@
 import React from 'react'
-import { Square, Triangle, Circle, Star, Bars} from '../assets/icons/AllIcons'
+import { Square, Triangle, Circle, Star, Bars, ArrowRightDown} from '../assets/icons/AllIcons'
 
 const ClaimSection = () => {
   return (
@@ -28,11 +28,15 @@ const ClaimSection = () => {
                     <Bars height={300}/>
                 </div>
 
+
+                <h4 className='text-white text-decoration-underline text-uppercase my-5 ms-auto fw-bold c-pointer'>
+                    // About me <ArrowRightDown width={20} height={20} className={'fill-white ms-3'}/>
+                </h4>
             </div>
 
             {/* right side */}
-            <div className="col-6 mt-5" style={{ maxHeight:'400px' }}>
-                <img style={{ objectPosition: 'right' }} className='w-100 h-100 object-fit-contain'  src="public/img/Astronaut.png" alt="Astronaut" />
+            <div className="col-6 mt-5 h-100">
+                <img style={{ objectPosition: 'right' }} className='w-100 h-100 object-fit-contain'  src="/img/Astronaut.png" alt="Astronaut" />
             </div>
         </div>
     </div>
