@@ -78,18 +78,17 @@ header{
     }
   }
 
-  .abt-me-bg{
-    background-image: url('/img/AboutMe2.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-  }
-
   @media screen and (min-width: 300px) {
     .img-responsive-claim{
         background-image: url('/img/ClaimImgMobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .abt-me-bg {
+        background-image: none;
+    }
+    .abt-me-tablet{
+        background-image: none;
     }
   }
 
@@ -99,6 +98,16 @@ header{
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .abt-me-bg {
+        background-image: none;
+    }
+    .abt-me-tablet{
+        background-image: url('/img/AboutMe2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        min-height: 300px;
+    }
   }
 
   @media screen and (min-width: 992px) {
@@ -107,6 +116,15 @@ header{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
+    }
+    .abt-me-bg{
+        background-image: url('/img/AboutMe2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+      }
+    .abt-me-tablet{
+        background-image: none;
     }
   }
 
