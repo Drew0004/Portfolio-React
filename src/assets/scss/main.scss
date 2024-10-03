@@ -29,6 +29,7 @@ html{
 
 //main style
 header{
+    border: 1px solid black;
     position: sticky;
     top: 0;
     left: 0;
@@ -69,6 +70,33 @@ header{
       width: 160%;
     }
   }
+
+  @media screen and (min-width: 300px) {
+    .img-responsive-claim{
+        background-image: url('/img/ClaimImgMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .img-responsive-claim-md{
+        background-image: url('/img/ClaimImgTablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .img-responsive-claim-lg{
+        background-image: url('/img/ClaimImgDesktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+  }
+
+  
 
   
   
