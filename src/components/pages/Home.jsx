@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
             <MyHeader scrollToAbout={scrollToAbout}/>
-            <ClaimSection/>
+            <ClaimSection scrollToAbout={scrollToAbout}/>
             <AboutSection ref={abtRef}/>
         </>
     )
