@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
 import OffCanva from './OffCanva'
 
-const MyHeader = ({scrollToAbout}) => {
+const MyHeader = ({scrollToAbout, scrollToWorks}) => {
 
   return (
     <>
@@ -17,7 +17,7 @@ const MyHeader = ({scrollToAbout}) => {
                         <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold text-black'>About</a>
                     </li>
                     <li className='d-lg-block d-none'>
-                        <a href="#nogo" className='text-uppercase text-underline fw-bold text-black'>Works</a>
+                        <a onClick={scrollToWorks} href="#nogo" className='text-uppercase text-underline fw-bold text-black'>Works</a>
                     </li>
                     <li className='d-lg-block d-none'>
                         <button className="my-btn px-4 py-2 d-flex align-items-center">

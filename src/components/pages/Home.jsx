@@ -5,6 +5,7 @@ import AboutSection from '../AboutSection'
 import ProjectSlider from '../ProjectsSlider'
 const Home = () => {
     const abtRef = useRef(null)
+    const worksRef = useRef(null)
 
     const scrollToAbout = () => {
       if (abtRef.current) {
@@ -16,12 +17,23 @@ const Home = () => {
         });
       }
     };
+
+    const scrollToWorks = () => {
+      if (worksRef.current) {
+        const offset = 100;
+        const sectionPosition = worksRef.current.getBoundingClientRect().top; 
+        window.scrollTo({
+          top: sectionPosition - offset,
+          behavior: 'smooth',
+        });
+      }
+    };
     return (
         <>
-            <MyHeader scrollToAbout={scrollToAbout}/>
+            <MyHeader scrollToAbout={scrollToAbout} scrollToWorks={scrollToWorks}/>
             <ClaimSection scrollToAbout={scrollToAbout}/>
             <AboutSection ref={abtRef}/>
-            <ProjectSlider/>
+            <ProjectSlider ref={worksRef}/>
         </>
     )
 }
