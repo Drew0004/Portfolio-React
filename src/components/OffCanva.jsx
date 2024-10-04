@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
 
-const OffCanva = ({scrollToAbout}) => {
+const OffCanva = ({scrollToAbout, scrollToWorks}) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -24,7 +24,7 @@ const OffCanva = ({scrollToAbout}) => {
                             <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>About</a>
                         </li>
                         <li className='dotted-border py-4'>
-                            <a href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>Works</a>
+                            <a onClick={scrollToWorks} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>Works</a>
                         </li>
                         <li className='dotted-border py-4'>
                             <button className="my-btn px-4 py-2 d-flex align-items-center">
