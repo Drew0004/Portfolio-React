@@ -126,7 +126,7 @@ const artworks = [
     '/img/Artworks/RockCerchio.jpg',
     '/img/Artworks/scifi.jpg',
     '/img/Artworks/SirFlower.jpg',
-    '/img/Artworks/Space Invaders.jpg',s
+    '/img/Artworks/Space Invaders.jpg',
 ]
 
 export  { projects, artworks };

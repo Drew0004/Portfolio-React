@@ -32,7 +32,7 @@ const MyHeader = ({scrollToAbout}) => {
                         </button>
                     </li>
                 </ul>
-                <OffCanva/>
+                <OffCanva scrollToAbout={scrollToAbout}/>
               </nav>
             </div>
         </header>
