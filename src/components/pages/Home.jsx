@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import MyHeader from '../MyHeader'
 import ClaimSection from '../ClaimSection'
 import AboutSection from '../AboutSection'
@@ -10,7 +10,7 @@ const Home = () => {
     const scrollToAbout = () => {
       if (abtRef.current) {
         const offset = 80;
-        const sectionPosition = abtRef.current.getBoundingClientRect().top;
+        const sectionPosition = abtRef.current.getBoundingClientRect().top + window.scrollY;
         window.scrollTo({
           top: sectionPosition - offset, 
           behavior: 'smooth',
@@ -21,7 +21,7 @@ const Home = () => {
     const scrollToWorks = () => {
       if (worksRef.current) {
         const offset = 100;
-        const sectionPosition = worksRef.current.getBoundingClientRect().top; 
+        const sectionPosition = worksRef.current.getBoundingClientRect().top + window.scrollY; 
         window.scrollTo({
           top: sectionPosition - offset,
           behavior: 'smooth',
