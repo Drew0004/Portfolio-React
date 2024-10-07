@@ -27,16 +27,18 @@ body{
     fill: #ffff;
 }
 
-.primary-titles{
-    font-size: 8rem;
-}
-
 .min-h-700{
     min-height: 700px;
 }
 
 .c-ew{
     cursor: ew-resize;
+}
+
+.slider-img{
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 //main style
@@ -94,6 +96,12 @@ header{
     .abt-me-tablet{
         background-image: none;
     }
+    .min-h-200{
+        min-height: 200px;
+    }
+    .primary-titles{
+        font-size: 5rem;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -112,6 +120,12 @@ header{
         background-position: right;
         min-height: 300px;
     }
+    .min-h-md-500{
+        min-height: 500px;
+    }
+    .primary-titles{
+        font-size: 8rem;
+    }
   }
 
   @media screen and (min-width: 992px) {
@@ -129,6 +143,9 @@ header{
       }
     .abt-me-tablet{
         background-image: none;
+    }
+    .min-h-lg-700{
+        min-height: 700px;
     }
   }
 

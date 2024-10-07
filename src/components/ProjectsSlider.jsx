@@ -23,8 +23,8 @@ const ProjectSlider = forwardRef((props, worksRef) => {
         className="mySwiper">
         {
           projects.map((slide, slideIndex) => (
-              <SwiperSlide className='min-h-700' key={slideIndex}>
-                <div className='min-h-700' style={{ backgroundImage: `url('${slide.mainImg}')`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
+              <SwiperSlide key={slideIndex}>
+                <div className='min-h-200 min-h-md-500 min-h-lg-700 slider-img' style={{ backgroundImage: `url('${slide.mainImg}')`}}>
                   Ciao
                 </div>
               </SwiperSlide>
