@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
+import { Link } from 'react-router-dom';
 
 const OffCanva = ({scrollToAbout, scrollToWorks}) => {
     const [show, setShow] = useState(false);
@@ -15,16 +16,22 @@ const OffCanva = ({scrollToAbout, scrollToWorks}) => {
             <Offcanvas className="col-12 col-md-50 col-lg-50" placement='end' show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>
-                        <h5 className='text-uppercase fw-bold m-0'>Andrea <br /> Aliquò</h5>
+                        <Link to={'/'} className='text-reset text-decoration-none'>
+                            <h5 className='text-uppercase fw-bold m-0'>Andrea <br /> Aliquò</h5>
+                        </Link>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <ul className='list-unstyled m-0'>
                         <li className='dotted-border py-4'>
-                            <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>About</a>
+                            <Link to={'/'} className='text-reset text-decoration-none'>
+                                <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>About</a>
+                            </Link>
                         </li>
                         <li className='dotted-border py-4'>
-                            <a onClick={scrollToWorks} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>Works</a>
+                            <Link to={'/'} className='text-reset text-decoration-none'>
+                                <a onClick={scrollToWorks} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>Works</a>
+                            </Link>
                         </li>
                         <li className='dotted-border py-4'>
                             <button className="my-btn px-4 py-2 d-flex align-items-center">
