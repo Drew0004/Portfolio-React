@@ -14,17 +14,16 @@ const MyHeader = ({scrollToAbout, scrollToWorks}) => {
                 </div>
                 <ul className='col-7 list-unstyled m-0 d-flex justify-content-between align-items-center'>
                     <li className='d-lg-block d-none'>
-                        <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold text-black'>About</a>
+                        <span onClick={scrollToAbout} className='text-uppercase text-decoration-underline fw-bold text-black c-pointer'>About</span>
                     </li>
                     <li className='d-lg-block d-none'>
-                        <a onClick={scrollToWorks} href="#nogo" className='text-uppercase text-underline fw-bold text-black'>Works</a>
+                        <span onClick={scrollToWorks} className='text-uppercase text-decoration-underline fw-bold text-black c-pointer'>Works</span>
                     </li>
                     <li className='d-lg-block d-none'>
-                        <button className="my-btn px-4 py-2 d-flex align-items-center">
-                            <a href='/img/Andrea_Aliquò_Resume.pdf' download="Andrea_Aliquò_Resume.pdf" className='fw-bold text-decoration-none me-4 text-reset'>
-                                <span className='fw-bold me-4'>Resume</span> <ArrowRightDown width={'20px'} height={'20px'}/>
-                            </a> 
-                        </button>
+                      <button className="my-btn px-4 py-2 d-flex align-items-center">
+                            <a href='/img/Andrea_Aliquò_Resume.pdf' download="Andrea_Aliquò_Resume.pdf" className='fw-bold text-decoration-none me-4 text-reset'>Resume</a> <ArrowRightDown width={'20px'} height={'20px'}/>
+                      </button>
+
                     </li>
                     <li className='d-lg-block d-none'>
                         <button className="my-btn px-4 py-2 d-flex align-items-center">
