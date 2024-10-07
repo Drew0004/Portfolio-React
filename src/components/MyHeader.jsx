@@ -11,7 +11,7 @@ const MyHeader = ({scrollToAbout, scrollToWorks}) => {
             <div className="container-fluid">
               <nav className='row justify-content-between align-items-center g-0'>
                 <div className='col-auto'>
-                    <Link to={'/'} className='text-reset text-decoration-none'>
+                    <Link to={'/'} onClick={()=>{window.scrollTo(0, 0)}} className='text-reset text-decoration-none'>
                         <h5 className='text-uppercase fw-bold'>Andrea <br /> Aliquò</h5>
                     </Link>
                 </div>
