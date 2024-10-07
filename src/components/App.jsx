@@ -1,10 +1,16 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
+import Project from './pages/Project'
 
 function App() {
   return (
     <>
-        <Home/>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:title" element={<Project />} />
+    </Routes>
+
     </>
   )
 }

@@ -6,6 +6,7 @@ import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../ass
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import { Link } from 'react-router-dom';
 
 const ProjectSlider = forwardRef((props, worksRef) => {
   return (
@@ -35,9 +36,17 @@ const ProjectSlider = forwardRef((props, worksRef) => {
                         <h2 className='fw-bold text-uppercase main-red secondary-titles'>
                             // 0 {slideIndex + 1}
                         </h2>
-                        <button className="carousel-btn px-3 py-1 px-md-4 py-md-2 d-flex align-items-center">
-                            <span className='fw-bold me-4'>View Project</span> <ArrowRightUp width={'20px'} height={'20px'}/>
-                        </button>
+                        <Link
+                            to={`/projects/${slide.title}`}
+                            className='text-reset'
+                            state={{ 
+                                project: slide
+                            }}
+                            >
+                            <button className="carousel-btn px-3 py-1 px-md-4 py-md-2 d-flex align-items-center">
+                                <span className='fw-bold me-4'>View Project</span> <ArrowRightUp width={'20px'} height={'20px'}/>
+                            </button>
+                        </Link>
                     </div>
                 </div>
               </SwiperSlide>
