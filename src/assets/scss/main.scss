@@ -41,6 +41,10 @@ body{
     background-repeat: no-repeat;
 }
 
+.secondary-titles{
+    font-size: 5rem;
+}
+
 //main style
 header{
     position: sticky;
@@ -49,6 +53,23 @@ header{
     right: 0;
     z-index: 3;
     background-color: white;
+}
+
+.carousel-btn{
+    color: black !important; 
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    background: white;
+    transition: ease-in-out 0.5s;
+    &:hover{
+        color: white !important;
+        fill: #ffff;
+        background: black;
+    }
 }
 
 .my-btn {
@@ -125,6 +146,22 @@ header{
     }
     .primary-titles{
         font-size: 8rem;
+    }
+    .carousel-btn{
+        color: black !important; 
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid black;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        background: white;
+        transition: ease-in-out 0.5s;
+        &:hover{
+            color: white !important;
+            fill: #ffff;
+            background: black;
+        }
     }
   }
 
