@@ -34,8 +34,8 @@ const MyHeader = ({scrollToAbout, scrollToWorks, scrollToContact}) => {
                     </li>
                     <li className='d-lg-block d-none'>
                         <Link to={'/'} state={{ scrollContact: true }} className='text-reset text-decoration-none'>
-                            <button className="my-btn px-4 py-2 d-flex align-items-center">
-                                <span onClick={scrollToContact} className='fw-bold me-4'>Contact Me</span> <ArrowRightUp width={'20px'} height={'20px'}/>
+                            <button onClick={scrollToContact} className="my-btn px-4 py-2 d-flex align-items-center">
+                                <span  className='fw-bold me-4'>Contact Me</span> <ArrowRightUp width={'20px'} height={'20px'}/>
                             </button>
                         </Link>
                     </li>
