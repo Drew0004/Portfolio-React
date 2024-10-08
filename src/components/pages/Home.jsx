@@ -5,6 +5,7 @@ import AboutSection from '../AboutSection'
 import ProjectSlider from '../ProjectsSlider'
 import TechnologiesSect from '../TechnologiesSect'
 import ArtworksSlider from '../ArtworksSlider'
+import Footer from '../Footer'
 import { useLocation } from 'react-router-dom'
 const Home = () => {
     const abtRef = useRef(null)
@@ -53,6 +54,7 @@ const Home = () => {
             <ProjectSlider ref={worksRef}/>
             <TechnologiesSect/>
             <ArtworksSlider/>
+            <Footer/>
         </>
     )
 }

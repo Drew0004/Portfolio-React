@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import MyHeader from '../MyHeader';
+import Footer from '../Footer';
 
 
 const Project = () => {
@@ -10,6 +11,7 @@ const Project = () => {
         <>
             <MyHeader/>
             {project.title}
+            <Footer/>
         </>
   )
 }
