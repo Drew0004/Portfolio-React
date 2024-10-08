@@ -43,6 +43,14 @@ body{
         cursor: url('/img/TestCursor.png'), auto;
     }
 }
+.artwork-img{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover{
+        cursor: url('/img/TestCursor.png'), auto;
+    }
+}
 
 //main style
 header{

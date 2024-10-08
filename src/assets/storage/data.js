@@ -114,7 +114,7 @@ const artworks = [
     '/img/Artworks/Astratto1920.jpg',
     '/img/Artworks/Butterfly.jpg',
     '/img/Artworks/Ciclope.jpg',
-    '/img/Artworks/DalìEdit2.jpg',
+    '/img/Artworks/DaliEdit2.jpg',
     '/img/Artworks/Elephant.jpg',
     '/img/Artworks/Esso.jpg',
     '/img/Artworks/Fair Park.jpg',

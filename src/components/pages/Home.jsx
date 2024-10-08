@@ -4,6 +4,7 @@ import ClaimSection from '../ClaimSection'
 import AboutSection from '../AboutSection'
 import ProjectSlider from '../ProjectsSlider'
 import TechnologiesSect from '../TechnologiesSect'
+import ArtworksSlider from '../ArtworksSlider'
 import { useLocation } from 'react-router-dom'
 const Home = () => {
     const abtRef = useRef(null)
@@ -51,6 +52,7 @@ const Home = () => {
             <AboutSection ref={abtRef}/>
             <ProjectSlider ref={worksRef}/>
             <TechnologiesSect/>
+            <ArtworksSlider/>
         </>
     )
 }
