@@ -38,7 +38,7 @@ const ProjectSlider = forwardRef((props, worksRef) => {
                         </h2>
                         <Link
                             to={`/projects/${slide.title}`}
-                            className='text-reset'
+                            className='text-reset text-decoration-none'
                             state={{ 
                                 project: slide
                             }}

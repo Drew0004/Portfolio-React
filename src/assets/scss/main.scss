@@ -39,6 +39,9 @@ body{
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    &:hover{
+        cursor: url('/img/TestCursor.png'), auto;
+    }
 }
 
 .secondary-titles{
