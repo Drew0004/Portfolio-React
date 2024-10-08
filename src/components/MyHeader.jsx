@@ -3,7 +3,7 @@ import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../ass
 import OffCanva from './OffCanva'
 import { Link } from 'react-router-dom';
 
-const MyHeader = ({scrollToAbout, scrollToWorks}) => {
+const MyHeader = ({scrollToAbout, scrollToWorks, scrollToContact}) => {
 
   return (
     <>
@@ -33,12 +33,14 @@ const MyHeader = ({scrollToAbout, scrollToWorks}) => {
 
                     </li>
                     <li className='d-lg-block d-none'>
-                        <button className="my-btn px-4 py-2 d-flex align-items-center">
-                            <span className='fw-bold me-4'>Contact Me</span> <ArrowRightUp width={'20px'} height={'20px'}/>
-                        </button>
+                        <Link to={'/'} state={{ scrollContact: true }} className='text-reset text-decoration-none'>
+                            <button className="my-btn px-4 py-2 d-flex align-items-center">
+                                <span onClick={scrollToContact} className='fw-bold me-4'>Contact Me</span> <ArrowRightUp width={'20px'} height={'20px'}/>
+                            </button>
+                        </Link>
                     </li>
                 </ul>
-                <OffCanva scrollToAbout={scrollToAbout} scrollToWorks={scrollToWorks}/>
+                <OffCanva scrollToAbout={scrollToAbout} scrollToWorks={scrollToWorks} scrollToContact={scrollToContact}/>
               </nav>
             </div>
         </header>

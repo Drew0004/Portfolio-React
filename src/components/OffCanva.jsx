@@ -4,7 +4,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
 import { Link } from 'react-router-dom';
 
-const OffCanva = ({scrollToAbout, scrollToWorks}) => {
+const OffCanva = ({scrollToAbout, scrollToWorks, scrollToContact}) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -25,12 +25,12 @@ const OffCanva = ({scrollToAbout, scrollToWorks}) => {
                     <ul className='list-unstyled m-0'>
                         <li className='dotted-border py-4'>
                             <Link to={'/'} state={{ scrollAbt: true }} className='text-reset text-decoration-none'>
-                                <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>About</a>
+                                <span onClick={scrollToAbout} href="#nogo" className='text-uppercase text-decoration-underline fw-bold fs-5 text-black'>About</span>
                             </Link>
                         </li>
                         <li className='dotted-border py-4'>
                             <Link to={'/'} state={{ scrollWorks: true }} className='text-reset text-decoration-none'>
-                                <a onClick={scrollToWorks} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>Works</a>
+                                <span onClick={scrollToWorks} href="#nogo" className='text-uppercase text-decoration-underline fw-bold fs-5 text-black'>Works</span>
                             </Link>
                         </li>
                         <li className='dotted-border py-4'>
@@ -39,9 +39,11 @@ const OffCanva = ({scrollToAbout, scrollToWorks}) => {
                             </button>
                         </li>
                         <li className='dotted-border py-4'>
-                            <button className="my-btn px-4 py-2 d-flex align-items-center">
-                                <span className='fw-bold me-4'>Contact Me</span> <ArrowRightUp width={'20px'} height={'20px'}/>
-                            </button>
+                            <Link to={'/'} state={{ scrollContact: true }} className='text-reset text-decoration-none'>
+                                <button className="my-btn px-4 py-2 d-flex align-items-center">
+                                    <span onClick={scrollToContact} className='fw-bold me-4'>Contact Me</span> <ArrowRightUp width={'20px'} height={'20px'}/>
+                                </button>
+                            </Link>
                         </li>
                     </ul>
                 </Offcanvas.Body>
