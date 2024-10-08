@@ -17,12 +17,12 @@ const MyHeader = ({scrollToAbout, scrollToWorks}) => {
                 </div>
                 <ul className='col-7 list-unstyled m-0 d-flex justify-content-between align-items-center'>
                     <li className='d-lg-block d-none'>
-                        <Link to={'/'} className='text-reset text-decoration-none'>
+                        <Link to={'/'} state={{ scrollAbt: true }} className='text-reset text-decoration-none'>
                             <span onClick={scrollToAbout} className='text-uppercase text-decoration-underline fw-bold text-black c-pointer'>About</span>
                         </Link>
                     </li>
                     <li className='d-lg-block d-none'>
-                        <Link to={'/'} className='text-reset text-decoration-none'>
+                        <Link to={'/'} state={{ scrollWorks: true }} className='text-reset text-decoration-none'>
                             <span onClick={scrollToWorks} className='text-uppercase text-decoration-underline fw-bold text-black c-pointer'>Works</span>
                         </Link>
                     </li>

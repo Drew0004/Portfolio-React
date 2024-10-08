@@ -3,9 +3,15 @@ import MyHeader from '../MyHeader'
 import ClaimSection from '../ClaimSection'
 import AboutSection from '../AboutSection'
 import ProjectSlider from '../ProjectsSlider'
+import { useLocation } from 'react-router-dom'
 const Home = () => {
     const abtRef = useRef(null)
     const worksRef = useRef(null)
+
+    const {pathname} = useLocation()
+    const location = useLocation()
+    const {scrollAbt} = location.state || {}
+    const {scrollWorks} = location.state || {}
 
     const scrollToAbout = () => {
       if (abtRef.current) {
@@ -28,6 +34,15 @@ const Home = () => {
         });
       }
     };
+
+    useEffect(()=>{
+      if(scrollAbt){
+        scrollToAbout()
+      }
+      if(scrollWorks){
+        scrollToWorks()
+      }
+    },[pathname])
     return (
         <>
             <MyHeader scrollToAbout={scrollToAbout} scrollToWorks={scrollToWorks}/>

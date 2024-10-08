@@ -24,12 +24,12 @@ const OffCanva = ({scrollToAbout, scrollToWorks}) => {
                 <Offcanvas.Body>
                     <ul className='list-unstyled m-0'>
                         <li className='dotted-border py-4'>
-                            <Link to={'/'} className='text-reset text-decoration-none'>
+                            <Link to={'/'} state={{ scrollAbt: true }} className='text-reset text-decoration-none'>
                                 <a onClick={scrollToAbout} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>About</a>
                             </Link>
                         </li>
                         <li className='dotted-border py-4'>
-                            <Link to={'/'} className='text-reset text-decoration-none'>
+                            <Link to={'/'} state={{ scrollWorks: true }} className='text-reset text-decoration-none'>
                                 <a onClick={scrollToWorks} href="#nogo" className='text-uppercase text-underline fw-bold fs-5 text-black'>Works</a>
                             </Link>
                         </li>
