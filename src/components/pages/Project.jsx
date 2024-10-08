@@ -1,16 +1,14 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
 import MyHeader from '../MyHeader';
 import Footer from '../Footer';
+import AboutProject from '../AboutProject';
 
 
 const Project = () => {
-    const location = useLocation();
-    const { project } = location.state || {};
     return (
         <>
             <MyHeader/>
-            {project.title}
+            <AboutProject/>
             <Footer/>
         </>
   )
