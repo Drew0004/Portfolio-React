@@ -46,6 +46,7 @@ const Home = () => {
         scrollToWorks()
       }
     },[pathname])
+    
     return (
         <>
             <MyHeader scrollToAbout={scrollToAbout} scrollToWorks={scrollToWorks}/>

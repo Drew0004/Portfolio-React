@@ -25,7 +25,6 @@ const projects = [
             '/img/Slides Portfolio/BMusic/BMusicMessages.png',
             '/img/Slides Portfolio/BMusic/BMusicSelfReviews.png',
             '/img/Slides Portfolio/BMusic/BMusicStatistics.png',
-            '/img/Slides Portfolio/BMusic/BMusicBMusicErrorSponsor.png',
             '/img/Slides Portfolio/BMusic/BMusicPayment.png',
         ],
         repoLink: 'https://github.com/Drew0004/boolean-final-project-backend'
