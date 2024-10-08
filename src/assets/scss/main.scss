@@ -44,10 +44,6 @@ body{
     }
 }
 
-.secondary-titles{
-    font-size: 5rem;
-}
-
 //main style
 header{
     position: sticky;
@@ -126,6 +122,12 @@ header{
     .primary-titles{
         font-size: 5rem;
     }
+    .secondary-titles{
+        font-size: 2.4rem;
+    }
+    .icons-height{
+        height: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -150,6 +152,9 @@ header{
     .primary-titles{
         font-size: 8rem;
     }
+    .secondary-titles{
+        font-size: 4rem;
+    }
     .carousel-btn{
         color: black !important; 
         text-transform: uppercase;
@@ -165,6 +170,9 @@ header{
             fill: #ffff;
             background: black;
         }
+    }
+    .icons-height{
+        height: 60px;
     }
   }
 
@@ -186,6 +194,9 @@ header{
     }
     .min-h-lg-700{
         min-height: 700px;
+    }
+    .secondary-titles{
+        font-size: 6rem;
     }
   }
 

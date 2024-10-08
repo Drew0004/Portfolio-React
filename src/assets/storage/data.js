@@ -129,4 +129,27 @@ const artworks = [
     '/img/Artworks/Space Invaders.jpg',
 ]
 
-export  { projects, artworks };
+const graphicTechnologies = [
+    'img/Technologies/adobe-illustrator-svgrepo-com.svg',
+    '/img/Technologies/adobe-photoshop-svgrepo-com.svg',
+    '/img/Technologies/indesign-svgrepo-com.svg',
+    '/img/Technologies/blender-svgrepo-com.svg',
+    '/img/Technologies/figma.svg'
+]
+
+const webDevTechnologies = [
+    '/img/Technologies/html5.svg',
+    '/img/Technologies/css3-alt.svg',
+    '/img/Technologies/bootstrap.svg',
+    '/img/Technologies/js.svg',
+    '/img/Technologies/vuejs.svg',
+    '/img/Technologies/react-svgrepo-com.svg',
+    '/img/Technologies/sass.svg',
+    '/img/Technologies/php.svg',
+    '/img/Technologies/laravel.svg',
+    '/img/Technologies/mysql-svgrepo-com.svg',
+    '/img/Technologies/database-solid.svg',
+    '/img/Technologies/git-alt.svg'
+]
+
+export  { projects, artworks, graphicTechnologies, webDevTechnologies };
