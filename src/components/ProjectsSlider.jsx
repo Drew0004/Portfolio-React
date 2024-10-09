@@ -1,11 +1,12 @@
 import React, {forwardRef, useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { projects } from '../assets/storage/data';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { Link } from 'react-router-dom';
 
 const ProjectSlider = forwardRef((props, worksRef) => {
@@ -13,13 +14,14 @@ const ProjectSlider = forwardRef((props, worksRef) => {
     <div ref={worksRef}>
       <Swiper
         style={{ 
-          "--swiper-pagination-color": "#FF294D"
+          "--swiper-pagination-color": "#FF294D",
+          "--swiper-navigation-color": "#FF294D"
         }}         
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
         loop={true}
         pagination={
             { 
@@ -27,6 +29,7 @@ const ProjectSlider = forwardRef((props, worksRef) => {
                 clickable: true
             }
         }
+        navigation={true}
         className="mySwiper">
         {
           projects.map((slide, slideIndex) => (

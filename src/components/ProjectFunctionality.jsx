@@ -1,12 +1,13 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const ProjectFunctionality = () => {
     const location = useLocation();
@@ -30,12 +31,13 @@ const ProjectFunctionality = () => {
                     <Swiper
                         style={{ 
                         "--swiper-pagination-color": "#FF294D",
+                        "--swiper-navigation-color": "#FF294D"
                         }}         
                         autoplay={{
                         delay: 3000,
                         disableOnInteraction: false,
                         }}
-                        modules={[Autoplay, Pagination]}
+                        modules={[Autoplay, Pagination, Navigation]}
                         loop={true}
                         pagination={
                             { 
@@ -43,6 +45,7 @@ const ProjectFunctionality = () => {
                                 clickable: true
                             }
                         }
+                        navigation={true}
                         className="mySwiper">
                         {
                             project.carouselPics.map((slide, slideIndex) => (
