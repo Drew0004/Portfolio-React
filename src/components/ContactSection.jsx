@@ -2,9 +2,11 @@ import React, {forwardRef, useRef, useState} from 'react'
 import emailjs from '@emailjs/browser';
 import ValidateForm from '../utils/ValidateForm';
 import { ArrowRightUp, ArrowRightDown, ArrowLeftUp, ArrowLeftDown } from '../assets/icons/AllIcons'
+import MyModal from './MyModal';
 
 const ContactSection = forwardRef((props, contactRef) => {
     const [errors, setErrors] = useState({});
+    const [modalShow, setModalShow] = useState(false);
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -23,7 +25,10 @@ const ContactSection = forwardRef((props, contactRef) => {
         })
         .then(
             () => {
-                console.log('SUCCESS!');
+                // console.log('SUCCESS!');
+                setModalShow(true)
+                form.current.reset();
+                setErrors({})
             },
             (error) => {
                 // console.log('FAILED...', error.text);
@@ -67,6 +72,7 @@ const ContactSection = forwardRef((props, contactRef) => {
                     <ArrowRightUp className={'w-100 h-100 object-fit-contain'}/>
                 </div>
             </div>
+            <MyModal show={modalShow} onHide={() => setModalShow(false)}/>
         </div>
     )
     })
