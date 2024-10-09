@@ -36,7 +36,9 @@ body{
 .min-h-700{
     min-height: 700px;
 }
-
+.min-h-150{
+    min-height: 150px;
+}
 .c-ew{
     cursor: ew-resize;
 }
@@ -55,6 +57,16 @@ body{
     background-repeat: no-repeat;
     &:hover{
         cursor: url('/img/TestCursor.png'), auto;
+    }
+}
+.my-custom-input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    &:focus{
+        outline: none;
+        border-bottom: 1px solid #FF294D;
     }
 }
 
