@@ -16,20 +16,20 @@ const OffCanva = ({scrollToAbout, scrollToWorks, scrollToContact}) => {
             <Offcanvas className="col-12 col-md-50 col-lg-50" placement='end' show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>
-                        <Link to={'/'} className='text-reset text-decoration-none'>
-                            <h5 className='text-uppercase fw-bold m-0'>Andrea <br /> Aliquò</h5>
+                        <Link to={'/'} onClick={handleClose} className='text-reset text-decoration-none'>
+                            <h5 onClick={()=>{window.scrollTo(0, 0)}} className='text-uppercase fw-bold m-0'>Andrea <br /> Aliquò</h5>
                         </Link>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <ul className='list-unstyled m-0'>
                         <li className='dotted-border py-4'>
-                            <Link to={'/'} state={{ scrollAbt: true }} className='text-reset text-decoration-none'>
+                            <Link to={'/'} onClick={handleClose} state={{ scrollAbt: true }} className='text-reset text-decoration-none'>
                                 <span onClick={scrollToAbout} href="#nogo" className='text-uppercase text-decoration-underline fw-bold fs-5 text-black'>About</span>
                             </Link>
                         </li>
                         <li className='dotted-border py-4'>
-                            <Link to={'/'} state={{ scrollWorks: true }} className='text-reset text-decoration-none'>
+                            <Link to={'/'} onClick={handleClose} state={{ scrollWorks: true }} className='text-reset text-decoration-none'>
                                 <span onClick={scrollToWorks} href="#nogo" className='text-uppercase text-decoration-underline fw-bold fs-5 text-black'>Works</span>
                             </Link>
                         </li>
@@ -39,7 +39,7 @@ const OffCanva = ({scrollToAbout, scrollToWorks, scrollToContact}) => {
                             </button>
                         </li>
                         <li className='dotted-border py-4'>
-                            <Link to={'/'} state={{ scrollContact: true }} className='text-reset text-decoration-none'>
+                            <Link to={'/'} onClick={handleClose} state={{ scrollContact: true }} className='text-reset text-decoration-none'>
                                 <button onClick={scrollToContact} className="my-btn px-4 py-2 d-flex align-items-center">
                                     <span className='fw-bold me-4'>Contact Me</span> <ArrowRightUp width={'20px'} height={'20px'}/>
                                 </button>
